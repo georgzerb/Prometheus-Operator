@@ -101,10 +101,10 @@ alerting:
 		},
 		{
 			Version:        "v2.15.2",
-			ScrapeInterval: "60s",
+			ScrapeInterval: "1s",
 			Expected: `global:
   evaluation_interval: 30s
-  scrape_interval: 60s
+  scrape_interval: 1s
   external_labels:
     prometheus: /
     prometheus_replica: $(POD_NAME)

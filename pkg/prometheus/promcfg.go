@@ -172,7 +172,7 @@ func (cg *configGenerator) generateConfig(
 
 	cfg := yaml.MapSlice{}
 
-	scrapeInterval := "30s"
+	scrapeInterval := "1s"
 	if p.Spec.ScrapeInterval != "" {
 		scrapeInterval = p.Spec.ScrapeInterval
 	}
